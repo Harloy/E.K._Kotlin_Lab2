@@ -1,15 +1,11 @@
-import java.util.Scanner
-
 fun main() {
-    val scanner = Scanner(System.`in`)
-
     println("Введите число для округления:")
-    val numberToRound = scanner.nextInt()
+    val numberToRound = readLine()!!.toInt()
     println("Результат округления: ${roundNumber(numberToRound)}")
 
     println("\nВведите количество лет:")
-    val years = scanner.nextInt()
-    println("Результат: ${years} ${getYearEnding(years)}")
+    val years = readLine()!!.toInt()
+    println("Результат: $years ${getYearEnding(years)}")
 
     println("Программа завершена!")
 }
